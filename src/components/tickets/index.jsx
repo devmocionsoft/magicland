@@ -3,7 +3,6 @@ import { Container, Title, Text, SubTitle, Section, Pressable, Button, LayoutCou
 import Countries from '../contries';
 import divisor from '../../assets/images/DIVISOR.png';
 import bigMac1 from '../../assets/images/IMG_8353.jpg';
-import bigMac2 from '../../assets/images/IMG_8526.jpg'
 
 const Register = () => {
   const url = 'https://evius.co/landing/5f99a20378f48e50a571e3b6';
@@ -41,11 +40,6 @@ function Tikets({ normal1, normal2 }) {
           ))}
         </article>
       </LayoutCountry>
-      <Register />
-      <Section>
-        <ImageCurious src={bigMac2} />
-        <Button>UNA BOLETA DE MAGICLAND CUESTA LO MISMO QUE UNA HAMBURGUESA BIGMAC</Button>
-      </Section>
       <Register />
       <Separator src={divisor} />
     </Container>
