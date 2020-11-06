@@ -15,7 +15,7 @@ const Register = () => {
   );
 };
 
-function Tikets({ normal1, normal2, vip1, vip2 }) {
+function Tikets({ normal1, normal2 }) {
   return (
     <Container>
       <Title>ENTRADAS</Title>
@@ -46,22 +46,6 @@ function Tikets({ normal1, normal2, vip1, vip2 }) {
         <ImageCurious src={bigMac2} />
         <Button>UNA BOLETA DE MAGICLAND CUESTA LO MISMO QUE UNA HAMBURGUESA BIGMAC</Button>
       </Section>
-      <LayoutCountry>
-        <article>
-          {vip1.map((item) => (
-            <div key={item.id}>
-              <Countries country={item.country} flag={item.image} cost={item.cost} type={item.type} />
-            </div>
-          ))}
-        </article>
-        <article className='flags_items'>
-          {vip2.map((item) => (
-            <div key={item.id}>
-              <Countries country={item.country} flag={item.image} cost={item.cost} type={item.type} />
-            </div>
-          ))}
-        </article>
-      </LayoutCountry>
       <Register />
       <Separator src={divisor} />
     </Container>
