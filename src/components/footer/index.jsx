@@ -1,14 +1,20 @@
 import React from 'react';
-import { Title, Text, WrapperSocial, Link, Facebook, Instagram, TikTok, YouTube, ImageStripe, SponsorContainer, SponsorItem, TitleItem, Image } from './styles';
+import { Title, Text, WrapperSocial, Link, Facebook, Instagram, TikTok, YouTube, ImageStripe, SponsorContainer, SponsorItem, ImageSponsors } from './styles';
 import facebook from '../../assets/social/LOGO-FACEBOOK.png';
 import instagram from '../../assets/social/LOGO-INSTAGRAM.png';
 import tiktok from '../../assets/social/LOGO-TIKTOK-.png';
 import youtube from '../../assets/social/YOUTUBE.png';
 import stripe from '../../assets/images/FRANJA.png';
+import spon from '../../assets/sponsors/FOOTER-PATROCINADORES.png'
 import aval from '../../assets/sponsors/AVAL.png';
 import doritos from '../../assets/sponsors/DORITOS.png';
+
+import flaming from '../../assets/sponsors/FLAMING.png';
+import pepe from '../../assets/sponsors/PEPE.png';
+
 import selina from '../../assets/sponsors/SELINA.png';
 import spin from '../../assets/sponsors/SPIN.png';
+import reach from '../../assets/sponsors/REACH.png';
 
 const Social = () => {
   const faceUrl = 'https://www.facebook.com/YOLOAventuras01/';
@@ -36,29 +42,33 @@ const Social = () => {
 function Footer() {
   return (
     <>
-      <Title>NUEVAS NOTICIAS</Title>
+      <Title>NOTICIAS</Title>
       <Text>MANTENTE CONECTADO Y ENTERATE DE NOTICIAS, AVANCES DE LA SERIE Y CONTENIDO EXCLUSIVO.</Text>
       <WrapperSocial>
         <Social />
       </WrapperSocial>
       <ImageStripe src={stripe} />
       <SponsorContainer>
+        <div className="footer_mobile">
         <SponsorItem>
-          <TitleItem className='title_item'>PRESENTA:</TitleItem>
-          <Image src={aval} />
+          <img alt="aval" className="footer_image_aval" src={aval} />
         </SponsorItem>
         <SponsorItem>
-          <TitleItem>INVITA:</TitleItem>
-          <Image src={doritos} />
+          <img alt="doritos" className="footer_image_doritos" src={doritos} />
+          <img alt="flaming" className="footer_image_flaming" src={flaming} />
+          <img alt="pepe" className="footer_image_pepe" src={pepe} />
         </SponsorItem>
         <SponsorItem>
-          <TitleItem>APOYA:</TitleItem>
-          <Image className='image_seline' src={selina} />
+          <img alt="selina" className="footer_image_selina" src={selina} />
         </SponsorItem>
         <SponsorItem>
-          <TitleItem>PRODUCE:</TitleItem>
-          <Image src={spin} />
+          <img alt="spin" className="footer_image_spin" src={spin} />
+          <img alt="reach" className="footer_image_reach" src={reach} />
         </SponsorItem>
+        </div>
+        <div className="footer_desktop">
+          <ImageSponsors src={spon}/>
+        </div>
       </SponsorContainer>
     </>
   );

@@ -44,7 +44,7 @@ export const Text = styled.p`
 	font-size: 160%;
 	text-align: center;
 	font-weight: bold;
-	padding: 0 20% 0 20%;
+	padding: 0 20%;
 	margin: 0 0 10px 0;
 	${media.lessThan('mobile')`
 		font-size: 80%;
@@ -171,9 +171,12 @@ export const LayoutCountry = styled.section`
   flex-direction: column;
 	align-items: center;
 	margin-bottom: 30px;
-	.flags_items{
-		margin-left: -45px;
-	};
+		.flags_items{
+			margin-left: -45px;
+			${media.lessThan('mobile')`
+				margin-left: -35px;
+			`}
+		};
   `};
 	${media.between('tablet', 'medium')`
 		justify-content: space-around;
@@ -184,7 +187,7 @@ export const LayoutCountry = styled.section`
   `}
 	${media.greaterThan('desktop')`
 		justify-content: space-between;
-		padding: 0 10% 0 10%;
+		padding: 0 5% 0 5%;
   `}
 `
 
@@ -195,4 +198,5 @@ export const Wrapper = styled.div`
 
 export const Separator = styled.img`
 	width: 100%;
+	margin: 3% 0;
 `

@@ -111,71 +111,67 @@ export const ImageStripe = styled.img`
 
 export const SponsorContainer = styled.section`
 	width: 100%;
-	display: flex;
+	.footer_mobile {
+		${media.greaterThan('tablet')`
+			display: none;
+		`}
+	}
+	.footer_desktop {
+		${media.lessThan('tablet')`
+			display: none;
+		`}
+	}
 	${media.lessThan('tablet')`
 		flex-direction: column;
 		align-items: center;
   `};
-	${media.between('tablet', 'desktop')`
+	${media.greaterThan('tablet')`
+		padding: 0 5%;
 		width: 90%;
-		padding:5%;
+		margin-bottom: 5%;
   `};
 `;
 
 export const SponsorItem = styled.article`
 	width: 100%;
 	margin-bottom: 30px;
-	text-align: center;
-	${media.lessThan('tablet')`
-	&:nth-child(1) {
-		.title_item {
-			margin-left: 24px;
-		}
-		margin-left: -50px;
+	display: flex;
+	align-items: center;
+	margin-left: 2%;
+	.footer_image_aval {
+		width: 70%;
+		height: auto;
 	}
-	.image_seline {
+	.footer_image_doritos {
+		width: 30%;
+		height: auto;
+	}
+	.footer_image_flaming {
+		width: 30%;
+		height: auto;
+	}
+	.footer_image_pepe {
+		width: 30%;
+		height: auto;
+	}
+	.footer_image_selina {
+		width: 30%;
+		height: auto;
+	}
+	.footer_image_spin {
 		width: 40%;
+		height: auto;
+		margin-top: 20px;
 	}
-  `};
-	${media.between('tablet', 'desktop')`
-		text-align: left;
-		&:nth-child(1) {
-		.title_item {
-			margin-left: 18%;
-		}
-		margin-left: -30px;
-	}
-	.image_seline {
+	.footer_image_reach {
 		width: 40%;
+		height: auto;
+		margin-top: 32px;
 	}
-  `};
-	${media.greaterThan('desktop')`
-		text-align: left;
-		&:nth-child(1) {
-		.title_item {
-			margin-left: 14%;
-		}
-		margin-left: -70px;
-	}
-	.image_seline {
-		width: 40%;
-	}
-  `};
 `;
 
-export const TitleItem = styled.p`
-	color: #FFF;
-	text-align: left;
-	margin-bottom: 10px;
-	${media.lessThan('tablet')`
-		padding: 0 10%;
-  `};
-`;
-
-export const Image = styled.img`
-	width: 70%;
+export const ImageSponsors = styled.img`
+	position: relative;
+	width: 100%;
 	height: auto;
-	${media.between('tablet', 'desktop')`
-		width: 90%;
-  `};
-`;
+`

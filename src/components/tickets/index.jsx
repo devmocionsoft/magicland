@@ -2,7 +2,8 @@ import React from 'react';
 import { Container, Title, Text, SubTitle, Section, Pressable, Button, LayoutCountry, Wrapper, Separator, ImageCurious } from './styles';
 import Countries from '../contries';
 import divisor from '../../assets/images/DIVISOR.png';
-import bigMac1 from '../../assets/images/IMG_8353.jpg';
+import bigMac1 from '../../assets/images/IMG_8353.jpeg';
+import bigMac2 from '../../assets/images/IMG_8526.jpeg';
 
 const Register = () => {
   const url = 'https://evius.co/landing/5f99a20378f48e50a571e3b6';
@@ -14,7 +15,7 @@ const Register = () => {
   );
 };
 
-function Tikets({ normal1, normal2 }) {
+function Tikets({ normal1, normal2, vip1, vip2 }) {
   return (
     <Container>
       <Title>ENTRADAS</Title>
@@ -34,6 +35,28 @@ function Tikets({ normal1, normal2 }) {
         </article>
         <article className='flags_items'>
           {normal2.map((item) => (
+            <div key={item.id}>
+              <Countries country={item.country} flag={item.image} cost={item.cost} type={item.type} />
+            </div>
+          ))}
+        </article>
+      </LayoutCountry>
+      <Register />
+      <Separator src={divisor} />
+      <Section>
+        <ImageCurious src={bigMac2} />
+        <Button>UNA BOLETA DE MAGICLAND CUESTA LO MISMO QUE UNA HAMBURGUESA BIGMAC</Button>
+      </Section>
+      <LayoutCountry>
+        <article>
+          {vip1.map((item) => (
+            <div key={item.id}>
+              <Countries country={item.country} flag={item.image} cost={item.cost} type={item.type} />
+            </div>
+          ))}
+        </article>
+        <article className='flags_items'>
+          {vip2.map((item) => (
             <div key={item.id}>
               <Countries country={item.country} flag={item.image} cost={item.cost} type={item.type} />
             </div>

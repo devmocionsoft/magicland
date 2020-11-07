@@ -18,7 +18,7 @@ export const Country = styled.p`
 	color:#FCCA5A;
 	margin-right: 5px;
 	${media.lessThan('mobile')`
-		font-size: 100%;
+		font-size: 0.8rem;
   `};
 	${media.between('mobile', 'tablet')`
 	font-size: 100%;
@@ -30,7 +30,7 @@ export const Country = styled.p`
 	font-size: 120%;
   `};
 	${media.greaterThan('desktop')`
-	font-size: 220%;
+	font-size: 1.8rem;
   `};
 `;
 
@@ -39,7 +39,7 @@ export const Cost = styled.p`
 	color:#fff;
 	margin-right: 5px;
 	${media.lessThan('mobile')`
-		font-size: 100%;
+		font-size: 0.8rem;
   `};
 	${media.between('mobile', 'tablet')`
 	font-size: 100%;
@@ -51,7 +51,7 @@ export const Cost = styled.p`
 	font-size: 120%;
   `};
 	${media.greaterThan('desktop')`
-	font-size: 220%;
+	font-size: 1.8rem;
   `};
 `;
 
@@ -60,7 +60,7 @@ export const Type = styled.p`
 	color:#fff;
 	margin-right: 5px;
 	${media.lessThan('mobile')`
-		font-size: 100%;
+	font-size: 0.8rem;
   `};
 	${media.between('mobile', 'tablet')`
 	font-size: 100%;
@@ -72,6 +72,6 @@ export const Type = styled.p`
 	font-size: 120%;
   `};
 	${media.greaterThan('desktop')`
-	font-size: 220%;
+	font-size: 1.8rem;
   `};
 `;
