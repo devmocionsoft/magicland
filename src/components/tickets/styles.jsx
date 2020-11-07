@@ -62,8 +62,7 @@ export const Text = styled.p`
 `
 
 export const Section = styled.div`
-	display: flex;
-	justify-content: space-evenly;
+	text-align: center;
 	margin: 45px 0;
 	${media.lessThan('tablet')`
 		flex-direction: column;
@@ -76,42 +75,9 @@ export const ImageCurious = styled.img`
 	height: auto;
 	position: relative;
 	${media.lessThan('tablet')`
-		width: 50%;
-		margin-bottom: 5%;
-  `};
-`
-
-export const Button = styled.button`
-	background-color: #FCCA5A;
-  border: none;
-	color: #000;
-	font-weight: bold;
-  padding: 20px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 80%;
-  margin: 4px 2px;
-	cursor: pointer;
-	width: 80%;
-	margin-bottom: 20px;
-	${media.lessThan('mobile')`
-		font-size: 80%;
 		width: 60%;
   `};
-	${media.between('mobile', 'tablet')`
-		width: 65%;
-		font-size: 100%;
-  `};
-	${media.between('tablet', 'desktop')`
-		width: 40%;
-		font-size: 120%;
-  `};
-	${media.greaterThan('desktop')`
-	width: 40%;
-	font-size: 270%;
-  `};
-`;
+`
 
 export const Pressable = styled.a`
 	background-color: #FCCA5A;

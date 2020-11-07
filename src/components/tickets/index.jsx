@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Title, Text, SubTitle, Section, Pressable, Button, LayoutCountry, Wrapper, Separator, ImageCurious } from './styles';
+import { Container, Title, Text, SubTitle, Section, Pressable, LayoutCountry, Wrapper, Separator, ImageCurious } from './styles';
 import Countries from '../contries';
 import divisor from '../../assets/images/DIVISOR.png';
 import bigMac1 from '../../assets/images/IMG_8353.jpeg';
@@ -23,7 +23,6 @@ function Tikets({ normal1, normal2, vip1, vip2 }) {
       <SubTitle>#SABÍASQUE</SubTitle>
       <Section>
         <ImageCurious src={bigMac1} />
-        <Button>UNA BOLETA DE MAGICLAND CUESTA LO MISMO QUE UNA HAMBURGUESA BIGMAC</Button>
       </Section>
       <LayoutCountry>
         <article>
@@ -45,7 +44,6 @@ function Tikets({ normal1, normal2, vip1, vip2 }) {
       <Separator src={divisor} />
       <Section>
         <ImageCurious src={bigMac2} />
-        <Button>UNA BOLETA DE MAGICLAND CUESTA LO MISMO QUE UNA HAMBURGUESA BIGMAC</Button>
       </Section>
       <LayoutCountry>
         <article>
