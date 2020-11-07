@@ -3,7 +3,7 @@ import { Container, Title, Text, SubTitle, Section, Pressable, LayoutCountry, Wr
 import Countries from '../contries';
 import divisor from '../../assets/images/DIVISOR.png';
 import bigMac1 from '../../assets/images/IMG_8353.jpeg';
-import bigMac2 from '../../assets/images/IMG_8526.jpeg';
+// import bigMac2 from '../../assets/images/IMG_8526.jpeg';
 
 const Register = () => {
   const url = 'https://evius.co/landing/5f99a20378f48e50a571e3b6';
@@ -42,7 +42,7 @@ function Tikets({ normal1, normal2, vip1, vip2 }) {
       </LayoutCountry>
       <Register />
       <Separator src={divisor} />
-      <Section>
+      {/* <Section>
         <ImageCurious src={bigMac2} />
       </Section>
       <LayoutCountry>
@@ -62,7 +62,7 @@ function Tikets({ normal1, normal2, vip1, vip2 }) {
         </article>
       </LayoutCountry>
       <Register />
-      <Separator src={divisor} />
+      <Separator src={divisor} /> */}
     </Container>
   );
 }
