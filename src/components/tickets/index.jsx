@@ -15,7 +15,7 @@ const Register = () => {
   );
 };
 
-function Tikets({ normal1, normal2, vip1, vip2 }) {
+function Tikets({ normal1, normal2 }) {
   return (
     <Container>
       <Title>ENTRADAS</Title>
