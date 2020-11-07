@@ -1,13 +1,11 @@
 import colors from './colors';
 import GlobalStyle from './global';
 import media from './medias';
-import font from './fonts';
-import spacing from './spacing';
+import sizes from './sizes';
 
 const theme = {
   colors,
-  font,
-  spacing,
+  sizes,
 };
 
 export { GlobalStyle, media };

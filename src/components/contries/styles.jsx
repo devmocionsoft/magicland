@@ -15,63 +15,63 @@ export const Flag = styled.img`
 
 export const Country = styled.p`
 	font-size: 120%;
-	color:#FCCA5A;
+	color:${(props) => props.theme.colors.orange};
 	margin-right: 5px;
 	${media.lessThan('mobile')`
 		font-size: 0.8rem;
   `};
 	${media.between('mobile', 'tablet')`
-	font-size: 100%;
+		font-size: 100%;
   `};
 	${media.between('tablet', 'medium')`
-	font-size: 90%;
+		font-size: 90%;
   `};
 	${media.between('medium', 'desktop')`
-	font-size: 120%;
+		font-size: 120%;
   `};
 	${media.greaterThan('desktop')`
-	font-size: 1.8rem;
+		font-size: 1.8rem;
   `};
 `;
 
 export const Cost = styled.p`
 	font-size: 120%;
-	color:#fff;
+	color:${(props) => props.theme.colors.white};
 	margin-right: 5px;
 	${media.lessThan('mobile')`
 		font-size: 0.8rem;
   `};
 	${media.between('mobile', 'tablet')`
-	font-size: 100%;
+		font-size: 100%;
   `};
 	${media.between('tablet', 'medium')`
-	font-size: 90%;
+		font-size: 90%;
   `};
 	${media.between('medium', 'desktop')`
-	font-size: 120%;
+		font-size: 120%;
   `};
 	${media.greaterThan('desktop')`
-	font-size: 1.8rem;
+		font-size: 1.8rem;
   `};
 `;
 
 export const Type = styled.p`
 	font-size: 120%;
-	color:#fff;
+	color:${(props) => props.theme.colors.white};
 	margin-right: 5px;
 	${media.lessThan('mobile')`
-	font-size: 0.8rem;
+		font-size: 0.8rem;
   `};
 	${media.between('mobile', 'tablet')`
-	font-size: 100%;
+		font-size: 100%;
   `};
 	${media.between('tablet', 'medium')`
-	font-size: 90%;
+		font-size: 90%;
   `};
 	${media.between('medium', 'desktop')`
-	font-size: 120%;
+		font-size: 120%;
   `};
 	${media.greaterThan('desktop')`
-	font-size: 1.8rem;
+		font-size: 1.8rem;
   `};
 `;

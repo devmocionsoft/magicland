@@ -4,7 +4,7 @@ import { media } from '../../themes';
 export const Title = styled.p`
 	font-size: 200%;
 	font-weight: bold;
-	color: #FCCA5A;
+	color: ${(props) => props.theme.colors.orange};
 	margin-top: 20px;
 	margin-bottom: 20px;
 	${media.lessThan('tablet')`
@@ -20,13 +20,13 @@ export const Title = styled.p`
 		padding: 0 5%;
   `};
 	${media.greaterThan('desktop')`
-		font-size: 5rem;
+		font-size: ${(props) => props.theme.sizes.bigTitle};
 		padding: 0 6%;
   `};
 `;
 
 export const Text = styled.p`
-	color: #FFF;
+	color: ${(props) => props.theme.colors.white};
 	${media.lessThan('mobile')`
 		font-size: 80%;
 		padding: 0 5%;
@@ -84,8 +84,8 @@ export const Facebook = styled.img`
 export const Instagram = styled.img`
 	width: 100%;
 	height: auto;
-	border-left: 1px solid #FCCA5A;
-	border-right: 1px solid #FCCA5A;
+	border-left: 1px solid ${(props) => props.theme.colors.orange};
+	border-right: 1px solid ${(props) => props.theme.colors.orange};
 `;
 
 export const TikTok = styled.img`
@@ -98,7 +98,7 @@ export const TikTok = styled.img`
 export const YouTube = styled.img`
 	width: 100%;
 	height: auto;
-	border-left: 1px solid #FCCA5A;
+	border-left: 1px solid ${(props) => props.theme.colors.orange};
 `;
 export const ImageStripe = styled.img`
 	width: 100%;
@@ -137,7 +137,7 @@ export const SponsorItem = styled.article`
 	margin-bottom: 30px;
 	display: flex;
 	align-items: center;
-	margin-left: 2%;
+	margin-left: 1%;
 	.footer_image_aval {
 		width: 70%;
 		height: auto;

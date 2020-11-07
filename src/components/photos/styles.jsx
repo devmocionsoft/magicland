@@ -5,20 +5,20 @@ export const Title = styled.p`
 	font-size: 200%;
 	text-align: center;
 	font-weight: bold;
-	color: #FCCA5A;
+	color: ${(props) => props.theme.colors.orange};
 	margin-bottom: 20px;
 	${media.lessThan('tablet')`
 		font-size: 120%;
   `};
 	${media.between('mobile', 'tablet')`
-	font-size: 200%;
+		font-size: 200%;
   `};
 	${media.between('tablet', 'desktop')`
-	font-size: 220%;
-	padding: 0 5% 0 5%;
+		font-size: 220%;
+		padding: 0 5% 0 5%;
   `};
 	${media.greaterThan('desktop')`
-	font-size: 5rem;
+		font-size: ${(props) => props.theme.sizes.bigTitle};
   `};
 `;
 
@@ -59,10 +59,7 @@ export const Card = styled.img`
 	${media.between('tablet', 'medium')`
 		max-width: 30%;
   `};
-	${media.between('medium', 'desktop')`
+	${media.greaterThan('medium')`
 		width: 30%;
   `}
-	${media.greaterThan('desktop')`
-		width: 30%;
-  `};
 `;
