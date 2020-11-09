@@ -91,19 +91,21 @@ export const Pressable = styled.a`
   font-size: 80%;
   margin: 4px 2px;
 	cursor: pointer;
-	width: 80%;
 	margin-bottom: 20px;
-	${media.lessThan('tablet')`
+	${media.lessThan('mobile')`
 		font-size: 120%;
   `};
 	${media.between('mobile', 'tablet')`
 		font-size: 160%;
+		width: 70%;
   `};
 	${media.between('tablet', 'desktop')`
 		font-size: 200%;
+		width: 60%;
   `};
 	${media.greaterThan('desktop')`
 		font-size: ${(props) => props.theme.sizes.bigTitle};
+		width: 62%;
   `};
 `
 
@@ -133,7 +135,7 @@ export const TicketText = styled.p`
 
 export const LayoutCountry = styled.section`
 	display: flex;
-	${media.lessThan('tablet')`
+	${media.lessThan('mobile')`
   flex-direction: column;
 	align-items: center;
 	margin-bottom: 30px;

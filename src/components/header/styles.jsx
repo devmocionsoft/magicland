@@ -39,12 +39,12 @@ export const ImageStripe = styled.img`
 `;
 
 export const ImageLogo = styled.img`
+	max-width: 72%;
 	${media.lessThan('mobile')`
 		max-width: 70%;
 		margin-top: 10%;
   `};
 	${media.between('mobile', 'tablet')`
-		max-width: 72%;
 		margin-top: 8%;
   `};
 	${media.between('tablet', 'medium')`
@@ -73,23 +73,47 @@ export const Separator = styled.img`
 export const Title = styled.p`
 	text-align: center;
 	font-weight: bold;
+	padding: 0 5%;
 	color: ${(props) => props.theme.colors.orange};
-	${media.lessThan('tablet')`
+	${media.lessThan('mobile')`
 		font-size: 120%;
 		padding: 0 2%;
   `};
 	${media.between('mobile', 'tablet')`
 		font-size: 200%;
-		padding: 0 5% 0 5%;
   `};
 	${media.between('tablet', 'desktop')`
 		font-size: 220%;
-		padding: 0 5% 0 5%;
   `};
 	${media.greaterThan('desktop')`
 		font-size: ${(props) => props.theme.sizes.bigTitle};
+		padding: 0 3%;
   `};
 `;
+
+export const Wrapper = styled.div`
+	width: 100%;
+	position: relative;
+`
+
+export const ImageAval = styled.img`
+	width: 20%;
+	height: auto;
+	position: absolute;
+	margin-top: 20px;
+	${media.lessThan('mobile')`
+	margin-left: -45px;
+  `};
+	${media.between('mobile', 'tablet')`
+	margin-left: -30px;
+  `};
+	${media.between('tablet', 'desktop')`
+	margin-left: -90px;
+  `};
+	${media.greaterThan('desktop')`
+	margin-left: -165px;
+  `};
+`
 
 export const Pressable = styled.a`
 	background-color: ${(props) => props.theme.colors.orange};
@@ -103,23 +127,22 @@ export const Pressable = styled.a`
   font-size: 80%;
   margin: 4px 2px;
 	cursor: pointer;
-	width: 55%;
 	margin-top: 30px;
 	margin-bottom: 40px;
-	${media.lessThan('tablet')`
+	${media.lessThan('mobile')`
 		font-size: 120%;
   `};
 	${media.between('mobile', 'tablet')`
 		font-size: 160%;
-		width: 50%;
+		width: 70%;
   `};
 	${media.between('tablet', 'desktop')`
 		font-size: 200%;
-		width: 50%;
+		width: 60%;
   `};
 	${media.greaterThan('desktop')`
 		font-size: ${(props) => props.theme.sizes.bigTitle};
-		width: 50%;
+		width: 62%;
   `};
 `;
 

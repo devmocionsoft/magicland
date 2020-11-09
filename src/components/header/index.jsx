@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Section, ImageStripe, ImageLogo, ImageSlogan, Separator, Title, Pressable, SubTitle, Text, SectionText } from './styles';
+import { Container, Section, ImageStripe, Wrapper, ImageAval, ImageLogo, ImageSlogan, Separator, Title, Pressable, SubTitle, Text, SectionText } from './styles';
+import aval from '../../assets/sponsors/AVAL_LOGO.png';
 import stripe from '../../assets/images/FRANJA.png';
 import logo from '../../assets/images/LOGO_MAGICLAND.png';
 import slogan from '../../assets/images/SLOGAN.png';
@@ -12,7 +13,10 @@ function Header() {
       <Section>
         <ImageStripe src={stripe} />
         <Title>GRAN ESTRENO 19 NOVIEMBRE DE 2020</Title>
-        <ImageLogo src={logo} />
+        <Wrapper>
+          <ImageAval src={aval} />
+          <ImageLogo src={logo} />
+        </Wrapper>
         <ImageSlogan src={slogan} />
         <Separator src={divisor} />
         <Title>ÚNETE Y SÉ PARTE DE ESTE MUNDO MÁGICO</Title>
