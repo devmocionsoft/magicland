@@ -7,7 +7,7 @@ function Video() {
 		<>
 			<WrapperLayout>
 				<iframe
-					src="https://player.vimeo.com/video/474434362"
+					src="https://vimeo.com/480450196/536a2075c5"
 					title="magicLand"
 					frameborder="0"
 					allow="autoplay; fullscreen"
