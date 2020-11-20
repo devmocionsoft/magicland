@@ -7,7 +7,7 @@ import slogan from '../../assets/images/SLOGAN.png';
 import divisor from '../../assets/images/DIVISOR.png';
 
 function Header() {
-  const url = 'https://themagic.land/';
+  const url = 'https://evius.co/landing/5f99a20378f48e50a571e3b6';
   return (
     <Container>
       <Section>
