@@ -19,7 +19,7 @@ function Header() {
         </Wrapper>
         <ImageSlogan src={slogan} />
         <Separator src={divisor} />
-        <Title>ÚNETE Y SÉ PARTE DE ESTE MUNDO MÁGICO</Title>
+        <Title>Registrate gratis para ver el primer episodio</Title>
         <Pressable href={url} target="_blank"><p>VER EPISODIOS</p></Pressable>
         <SectionText>
           <SubTitle>La producción más grande de youtubers en habla hispana.</SubTitle>
