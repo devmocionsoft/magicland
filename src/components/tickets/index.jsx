@@ -10,7 +10,8 @@ const Register = () => {
   return (
     <Wrapper>
       <Title>ÚNETE Y SÉ PARTE DE ESTE MUNDO MÁGICO</Title>
-      <Pressable href={url} target="_blank"><p>REGISTRATE GRATIS  Y RECIBE MÁS INFORMACIÓN PARA SER PARTE DE ESTE MUNDO MÁGICO</p></Pressable>
+      {/* <Pressable href={url} target="_blank"><p>REGISTRATE GRATIS  Y RECIBE MÁS INFORMACIÓN PARA SER PARTE DE ESTE MUNDO MÁGICO</p></Pressable> */}
+      <Pressable href={url} target="_blank"><p>VER EPISODIOS</p></Pressable>
     </Wrapper>
   );
 };

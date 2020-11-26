@@ -18,7 +18,7 @@ export const Title = styled.p`
   `};
 	${media.between('tablet', 'desktop')`
 		font-size: 220%;
-		padding: 0 5% 0 5%;
+		padding: 0 15% 0 15%;
   `};
 	${media.greaterThan('desktop')`
 		font-size: ${(props) => props.theme.sizes.bigTitle};
@@ -35,7 +35,7 @@ export const SubTitle = styled.p`
 		font-size: 100%;
   `};
 	${media.greaterThan('desktop')`
-		font-size: 4rem;
+		font-size: 2rem;
   `};
 `
 
@@ -101,11 +101,11 @@ export const Pressable = styled.a`
   `};
 	${media.between('tablet', 'desktop')`
 		font-size: 200%;
-		width: 60%;
+		width: 26%;
   `};
 	${media.greaterThan('desktop')`
 		font-size: ${(props) => props.theme.sizes.bigTitle};
-		width: 62%;
+		width: 26%;
   `};
 `
 
@@ -152,10 +152,11 @@ export const LayoutCountry = styled.section`
 	${media.between('medium', 'desktop')`
 		justify-content: space-between;
 		padding: 0 6%;
+		padding: 0 15% 0 15%;
   `}
 	${media.greaterThan('desktop')`
 		justify-content: space-between;
-		padding: 0 5% 0 5%;
+		padding: 0 9% 0 9%;
   `}
 `
 

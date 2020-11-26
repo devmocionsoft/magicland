@@ -97,7 +97,7 @@ export const Wrapper = styled.div`
 `
 
 export const ImageAval = styled.img`
-	width: 20%;
+	width: 13%;
 	height: auto;
 	position: absolute;
 	margin-top: 20px;
@@ -111,7 +111,7 @@ export const ImageAval = styled.img`
 	margin-left: -90px;
   `};
 	${media.greaterThan('desktop')`
-	margin-left: -165px;
+	// margin-left: -165px;
   `};
 `
 
@@ -161,7 +161,7 @@ export const SubTitle = styled.p`
   `};
 	${media.greaterThan('desktop')`
 		margin-top: 5%;
-		font-size: 3rem;
+		font-size: 1rem;
   `};
 `;
 export const Text = styled(SubTitle)`
