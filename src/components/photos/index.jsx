@@ -7,12 +7,12 @@ import image3 from '../../assets/images/IMG_3.jpg';
 function Photos() {
   return (
     <>
-      <Title>FOTOS MAGIC LAND</Title>
+      {/* <Title>FOTOS MAGIC LAND</Title>
       <Container>
         <Card src={image1} />
         <Card src={image2} />
         <Card src={image3} />
-      </Container>
+      </Container> */}
     </>
   );
 }

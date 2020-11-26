@@ -101,11 +101,11 @@ export const Pressable = styled.a`
   `};
 	${media.between('tablet', 'desktop')`
 		font-size: 200%;
-		width: 26%;
+		width: 39%;
   `};
 	${media.greaterThan('desktop')`
 		font-size: ${(props) => props.theme.sizes.bigTitle};
-		width: 26%;
+		width: 39%;
   `};
 `
 

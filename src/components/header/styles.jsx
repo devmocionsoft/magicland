@@ -161,7 +161,7 @@ export const SubTitle = styled.p`
   `};
 	${media.greaterThan('desktop')`
 		margin-top: 5%;
-		font-size: 1rem;
+		font-size: 2rem;
   `};
 `;
 export const Text = styled(SubTitle)`
