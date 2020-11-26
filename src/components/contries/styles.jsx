@@ -56,7 +56,7 @@ export const Cost = styled.p`
 `;
 
 export const Type = styled.p`
-	font-size: 120%;
+	font-size: 148%;
 	color:${(props) => props.theme.colors.white};
 	margin-right: 5px;
 	${media.lessThan('mobile')`

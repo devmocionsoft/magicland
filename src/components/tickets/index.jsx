@@ -9,7 +9,7 @@ const Register = () => {
   const url = 'https://evius.co/landing/5f99a20378f48e50a571e3b6';
   return (
     <Wrapper>
-      <Title>ÚNETE Y SÉ PARTE DE ESTE MUNDO MÁGICO</Title>
+      {/* <Title>ÚNETE Y SÉ PARTE DE ESTE MUNDO MÁGICO</Title> */}
       {/* <Pressable href={url} target="_blank"><p>REGISTRATE GRATIS  Y RECIBE MÁS INFORMACIÓN PARA SER PARTE DE ESTE MUNDO MÁGICO</p></Pressable> */}
       <Pressable href={url} target="_blank"><p>REGISTRATE GRATIS PARA VER EL PRIMER EPISODIO</p></Pressable>
     </Wrapper>

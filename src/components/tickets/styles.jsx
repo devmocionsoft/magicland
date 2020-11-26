@@ -47,13 +47,13 @@ export const Text = styled.p`
 	padding: 0 20%;
 	margin: 0 0 10px 0;
 	${media.lessThan('mobile')`
-		font-size: 80%;
+		font-size: 112%;
   `};
 	${media.between('mobile', 'tablet')`
 		font-size: 100%;
   `};
 	${media.between('tablet', 'desktop')`
-		font-size: 120%;
+		font-size: 148%;
   `};
 	${media.greaterThan('desktop')`
 		font-size: ${(props) => props.theme.sizes.normal};

@@ -39,7 +39,7 @@ export const ImageStripe = styled.img`
 `;
 
 export const ImageLogo = styled.img`
-	max-width: 72%;
+	max-width: 50%;
 	${media.lessThan('mobile')`
 		max-width: 70%;
 		margin-top: 10%;
@@ -52,18 +52,18 @@ export const ImageLogo = styled.img`
 		margin-top: 17%;
   `};
 	${media.between('medium', 'desktop')`
-		max-width: 72%;
+		max-width: 50%;
 		margin-top: 15%;
   `}
 	${media.greaterThan('desktop')`
-		max-width: 72%;
+		max-width: 40%;
 		margin-top: 15%;
   `};
 `;
 
 export const ImageSlogan = styled.img`
 	margin-top: 20px;
-	width: 80%;
+	width: 50%;
 `;
 
 export const Separator = styled.img`
@@ -130,7 +130,7 @@ export const Pressable = styled.a`
 	margin-top: 30px;
 	margin-bottom: 40px;
 	${media.lessThan('mobile')`
-		font-size: 120%;
+	    font-size: 112%
   `};
 	${media.between('mobile', 'tablet')`
 		font-size: 160%;
@@ -138,11 +138,11 @@ export const Pressable = styled.a`
   `};
 	${media.between('tablet', 'desktop')`
 		font-size: 200%;
-		width: 60%;
+		width: 40%;
   `};
 	${media.greaterThan('desktop')`
 		font-size: ${(props) => props.theme.sizes.bigTitle};
-		width: 62%;
+		width: 40%;
   `};
 `;
 
@@ -171,7 +171,7 @@ export const Text = styled(SubTitle)`
 	padding-right: 16%;
 	${media.lessThan('mobile')`
 		padding: 0 5%;
-		font-size: 80%;
+		font-size: 98%;
   `};
 	${media.between('mobile', 'tablet')`
 		padding: 0 5%;
