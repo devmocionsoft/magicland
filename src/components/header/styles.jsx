@@ -178,7 +178,7 @@ export const Text = styled(SubTitle)`
 		font-size: 100%;
   `};
 	${media.between('tablet', 'desktop')`
-		font-size: 120%;
+		font-size: 150%;
   `}
 	${media.greaterThan('desktop')`
 		font-size: ${(props) => props.theme.sizes.normal};
