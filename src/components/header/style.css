@@ -1,7 +1,7 @@
  .JuegoMagicland{
         margin-top: 34px;
         width:calc(100% - 100px);
-        height: 80vh;
+        height: 100vh;
         border-color: black;
     }
 @media (min-width:300px) and (max-width:440px){
@@ -19,9 +19,9 @@
         height: 50vh;
     }
 }
-@media (min-width:1030px) and (max-width:1430px){
+@media (min-width:1030px) and (max-width:1440px){
     .JuegoMagicland{
-        height: 68vh;
+        height: 70vh;
     }
 }
 /* // @media screen and (){}
