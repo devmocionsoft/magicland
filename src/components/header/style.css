@@ -1,22 +1,27 @@
  .JuegoMagicland{
         margin-top: 34px;
-        width: calc(100% - 100px);
+        width:calc(100% - 100px);
         height: 80vh;
         border-color: black;
     }
-@media screen and (min-width:427px) and (max-width:870px){
+@media (min-width:300px) and (max-width:440px){
     .JuegoMagicland{
-       height: 21vh;
+       height: 20vh;
+    }
+}
+@media (min-width:440px) and (max-width:870px){
+    .JuegoMagicland{
+       height: 38vh;
     }
 }
 @media (min-width:900px) and (max-width:1030px){
     .JuegoMagicland{
-        height: 30vh;
+        height: 50vh;
     }
 }
 @media (min-width:1030px) and (max-width:1430px){
     .JuegoMagicland{
-        height: 43vh;
+        height: 68vh;
     }
 }
 /* // @media screen and (){}
