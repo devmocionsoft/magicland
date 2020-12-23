@@ -22,24 +22,7 @@ export const Container = styled.div`
   `};
 `;
 
-export const Juego = styled.div`
 
-  ${media.lessThan('mobile')`
-`};
-  ${media.between('mobile', 'tablet')`
-
-`};
-  ${media.between('tablet', 'medium')`
-
-`};
-  ${media.between('medium', 'desktop')`
-	 
-`}
-  ${media.greaterThan('desktop')`
-    width: 100%
-
-`};
-`;
 
 export const Image = styled.img`
 	width: 100%;
