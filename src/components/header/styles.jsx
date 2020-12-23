@@ -22,6 +22,25 @@ export const Container = styled.div`
   `};
 `;
 
+export const Juego = styled.div`
+
+  ${media.lessThan('mobile')`
+`};
+  ${media.between('mobile', 'tablet')`
+
+`};
+  ${media.between('tablet', 'medium')`
+
+`};
+  ${media.between('medium', 'desktop')`
+	 
+`}
+  ${media.greaterThan('desktop')`
+    width: 100%
+
+`};
+`;
+
 export const Image = styled.img`
 	width: 100%;
 `;
@@ -117,15 +136,15 @@ export const ImageAval = styled.img`
 
 export const Pressable = styled.a`
 	background-color: ${(props) => props.theme.colors.orange};
-  border: none;
+    border: none;
 	color: ${(props) => props.theme.colors.dark};
 	font-weight: bold;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 80%;
-  margin: 4px 2px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 80%;
+    margin: 4px 2px;
 	cursor: pointer;
 	margin-top: 30px;
 	margin-bottom: 40px;
