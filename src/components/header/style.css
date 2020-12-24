@@ -4,12 +4,16 @@
         height: 100vh;
         border-color: black;
     }
+
 @media (min-width:300px) and (max-width:440px){
     .JuegoMagicland{
        height: 20vh;
     }
+    #frame{
+        font-size: 5px !important;
+    }
 }
-@media (min-width:440px) and (max-width:870px){
+@media (min-width:440px) and (max-width:870px) and (orientation: landscape){
     .JuegoMagicland{
        height: 38vh;
     }
@@ -22,6 +26,12 @@
 @media (min-width:1030px) and (max-width:1440px){
     .JuegoMagicland{
         height: 70vh;
+    }
+}
+
+@media (orientation: landscape){
+    .JuegoMagicland{
+       height: 98vh;
     }
 }
 /* // @media screen and (){}

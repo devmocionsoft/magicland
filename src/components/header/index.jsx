@@ -29,6 +29,7 @@ function Header() {
           <Text>En <b>MAGICLAND</b> Yolo, Nando, Mariana y Panda son los protagonistas de esta serie cinematográfica para todas las edades, la serie con 4 episodios exclusivos, cargados de efectos especiales, magia, música, personajes fantásticos y un gran mensaje dirigido hacia la importancia del cuidado del medio ambiente y el futuro de la humanidad. Además de juegos, fiestas virtuales, premios y momentos de interacción con los <b>YOLO AVENTURAS</b>, únete y se parte de esta nueva comunidad en la tierra de la magia. No te quedes sin vivir esta increíble experiencia.</Text>
            <iframe id="inlineFrameExample"
               title="Inline Frame Example"
+              style={{fontSize:'7px'}}
               className='JuegoMagicland'
               src="https://juegomagicland.netlify.app/">
           </iframe> 
