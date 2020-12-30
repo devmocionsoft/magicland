@@ -1,13 +1,13 @@
  .JuegoMagicland{
         margin-top: 34px;
-        width:calc(100% - 100px);
+        width:calc(100% - 80px);
         height: 100vh;
         border-color: black;
     }
 
 @media (min-width:300px) and (max-width:440px){
     .JuegoMagicland{
-       height: 20vh;
+       height: 25vh;
     }
     #frame{
         font-size: 5px !important;
@@ -15,7 +15,7 @@
 }
 @media (min-width:440px) and (max-width:870px){
     .JuegoMagicland{
-       height: 38vh;
+       height: 50vh;
     }
 }
 @media (min-width:900px) and (max-width:1030px){
@@ -25,13 +25,13 @@
 }
 @media (min-width:1030px) and (max-width:1440px){
     .JuegoMagicland{
-        height: 70vh;
+        height: 122vh;
     }
 }
 
 @media (orientation: landscape){
     .JuegoMagicland{
-       height: 98vh;
+       height: 100vh;
     }
 }
 /* // @media screen and (){}
