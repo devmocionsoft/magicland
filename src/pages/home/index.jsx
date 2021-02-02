@@ -6,9 +6,9 @@ function Home() {
   return (
     <>
       <Header />
-      <Video />
+      {/* <Video />
       <Tikets normal1={normal1} normal2={normal2} />
-      <Photos />
+      <Photos /> */}
       <Footer />
     </>
   );

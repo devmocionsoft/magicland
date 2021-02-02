@@ -15,7 +15,7 @@ function Header() {
         <ImageStripe src={stripe} />
         {/* <Title>REGISTRATE GRATIS PARA VER EL PRIMER EPISODIO</Title> */}
         {/* <Pressable href={url} target="_blank"><p>DISFRUTA DEL EPISODIO FINAL UTILIZANDO TU CÓDIGO PAGO.</p></Pressable> */}
-        <Pressable target="_blank"><p>TERMINADO.</p></Pressable>
+        <Pressable target="_blank"><p>TERMINADO</p></Pressable>
         {/* <Wrapper>
           <ImageAval src={aval} />
           <ImageLogo src={logo} />
